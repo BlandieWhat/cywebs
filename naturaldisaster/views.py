@@ -7,10 +7,10 @@ from .forms import PostForm
 
 class HomePageView(ListView):
     model = Naturaldisaster
-    template_name = 'Naturaldisaster.html'
+    template_name = 'naturaldisaster.html'
 
 class CreatePostView(CreateView):
     model = Naturaldisaster
     form_class = PostForm
-    template_name = "Naturaldisaster-add.html"
+    template_name = "naturaldisaster-add.html"
     success_url = reverse_lazy("Naturaldisaster")

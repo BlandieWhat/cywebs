@@ -1,16 +1,16 @@
 from django.shortcuts import render
 from django.views.generic import ListView, CreateView
-from .models import Orphan
+from .models import Announcements
 from django.urls import reverse_lazy
 from .forms import PostForm
 # Create your views here.
 
 class HomePageView(ListView):
-    model = Orphan
-    template_name = 'orphan.html'
+    model = Announcements
+    template_name = 'announcements.html'
 
 class CreatePostView(CreateView):
-    model = Orphan
+    model = Announcements
     form_class = PostForm
-    template_name = "orphan-add.html"
-    success_url = reverse_lazy("Orphan")
+    template_name = "announcement-add.html"
+    success_url = reverse_lazy("announcements")

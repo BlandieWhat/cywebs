@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'volunteer',
     'others',
     'contact',
+    'announcements',
 ]
 
 PAYPAL_TEST = True

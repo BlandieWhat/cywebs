@@ -214,7 +214,14 @@ section .section-title{
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
+.card-title {
+  font-family: 'Lato',sans-serif;
+  margin-bottom: .75rem;
+}
 
+h1#timeline {
+  font-family: 'Lato', sans-serif;
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -390,6 +397,7 @@ section .section-title{
     margin-top: 0;
     color: inherit;
     font-size: 14px;
+    font-family: 'Lato', sans-serif;
   }
   .timeline-body > p,
   .timeline-body > ul {
@@ -403,6 +411,7 @@ section .section-title{
   .subscribe-section {
     padding: 40px 0;
     background-color: #AF0808;
+    font-family: 'Lato', sans-serif;
 }
 .subscribe-section p {
     color: #fff;
@@ -441,6 +450,7 @@ section .section-title{
 footer{
     background-color: #33383c;
     padding:70px 0px;
+    font-family: 'Lato',sans-serif;
   }
 
   .adress span , .contact span , .social span{
