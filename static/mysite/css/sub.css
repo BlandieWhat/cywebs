@@ -11,116 +11,68 @@
 }
 
 
-  .tab{
-      overflow: hidden;
-      background-color: white;
-      position: absolute;
-      width: 100%;
-      border-style: solid;
-      font-family: 'Lato', sans-serif;
-  }
+.tab{
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  border-style: solid;
+  font-family: 'Lato', sans-serif;
+}
 
-  .tab img{
-      width: 100px;
-      float:left;
-  }
+.tab img{
+  width: 100px;
+  float:left;
+}
 
-  .tab a{
-      float: left;
+.tab a{
+  float: left;
+display: block;
+color: black;
+text-align: left;
+padding: 20px 20px;
+text-decoration: none;
+}
+
+.tab a:hover{
+  background: #ddd;
+  color: black;
+}
+.tab a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+
+.tab .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .tab a:not(:first-child) {display: none;}
+  .tab a.icon {
+    float: right;
     display: block;
-    color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab.responsive {position: relative;}
+  .tab.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline;
+  }
+  .tab.responsive a {
+    float: none;
+    display: block;
     text-align: left;
-    padding: 20px 20px;
-    text-decoration: none;
+    color: black;
   }
-
-  .tab a:hover{
-      background: #ddd;
-      color: black;
   }
-  .tab a.active {
-      background-color: #4CAF50;
-      color: black;
-    }
-
-  .tab .icon {
-      display: none;
-    }
-    .tab img{
-          left: 50%;
-          top: 50%
-      }
-    @media only screen and (max-width:360px) and (max-width:762px) {
-      .tab a:not(:first-child) {display: none;}
-      .tab a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media only screen and (max-width:411px) {
-      .tab a:not(:first-child) {display: none;}
-      .tab a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media only screen and (max-width:412px) {
-      .tab a:not(:first-child) {display: none;}
-      .tab a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-
-  @media only screen and (max-width:360px) and (max-width:762px) {
-      .tab.responsive {position: relative;}
-      .tab.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: inline;
-      }
-      .tab.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: black;
-      }
-  }
-
-   @media only screen and (max-width:411px) {
-      .tab.responsive {position: relative;}
-      .tab.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: inline;
-      }
-      .tab.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: black;
-      }
-  }
-
-  @media only screen and (max-width:412px) {
-      .tab.responsive {position: relative;}
-      .tab.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: inline;
-      }
-      .tab.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: black;
-      }
+  .tab img{
+      left: 50%;
+      top: 50%
   }
 
   .hover {
@@ -211,4 +163,17 @@
   .hover-4:hover .hover-overlay {
     background: rgba(0, 0, 0, 0.8);
   }
-  
+
+  .font-weight-bold {
+    font-family: 'Lato',sans-serif;
+}
+
+  .display-4 {
+  /* font-size: 3.5rem; */
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: large;
+}

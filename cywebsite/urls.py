@@ -41,6 +41,8 @@ urlpatterns = [
     path('volunteer/', include('volunteer.urls')),
     path('others/', include('others.urls')),
     path('contact/', include('contact.urls')),
+    path('schoolrestoration/', include('school_restoration.urls')),
+    path('announcements/', include('announcements.urls'))
 
 
 ]
